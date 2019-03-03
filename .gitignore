@@ -3,4 +3,4 @@
 
 # Required libraries
 /vendor
-.composer.lock
+composer.lock
