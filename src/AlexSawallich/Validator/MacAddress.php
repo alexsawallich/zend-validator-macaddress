@@ -67,6 +67,7 @@ class MacAddress extends AbstractValidator
 			$separators .= '?';
 		}
 		
-		return '#([' . $numbers . $chars . ']{2}' . $separators . '){6}#';
+		$pattern = '#^([' . $numbers . $chars . ']{2}' . $separators . '){5}([' . $numbers . $chars . ']{2})$#';
+		return $pattern;
 	}
 }

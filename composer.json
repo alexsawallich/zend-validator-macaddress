@@ -20,5 +20,8 @@
         "psr-4": {
             "AlexSawallich\\Validator\\": "src/AlexSawallich/Validator"
         }
-    }
+    },
+	"require-dev": {
+		"phpunit/phpunit": "^6.5"
+	}
 }
