@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alexsawallich/zend-validator-macaddress.svg?branch=master)](https://travis-ci.org/alexsawallich/zend-validator-macaddress)
+
 # zend-validator-macaddress
 
 Validation class to validate MAC addresses for plugging in right into Zend Framework 3.
