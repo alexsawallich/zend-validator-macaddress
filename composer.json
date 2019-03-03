@@ -1,0 +1,24 @@
+{
+	"name": "alexsawallich/zend-validator-macaddress",
+	"type": "library",
+	"keywords": ["zend", "validate", "validator", "mac", "address", "plugin"],
+	"license": "GNU General Public License v3.0",
+	"homepage": "https://github.com/alexsawallich/zend-validator-macaddress",
+	"readme": "README.md",
+	"authors": [
+		{
+			"name": "Alex Sawallich",
+			"email": "kontakt@alexsawallich.de",
+			"homepage": "https://alex.tools/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+        "zendframework/zend-validator": "^2.12"
+    },
+	"autoload": {
+        "psr-4": {
+            "AlexSawallich\\Validator\\": "src/AlexSawallich/Validator"
+        }
+    }
+}
