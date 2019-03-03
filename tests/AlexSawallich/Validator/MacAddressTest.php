@@ -55,4 +55,24 @@ class MacAddressTest extends TestCase
 		$this->assertEquals(false, $validator->isValid('11-11-11-11-11-11'));
 		$this->assertEquals(true, $validator->isValid('111111111111'));
 	}
+	
+	public function testSettersAndGetters()
+	{
+		$validator = new MacAddress();
+		
+		$validator->setAllowColonNotation(false);
+		$this->assertEquals(false, $validator->getAllowColonNotation());
+		
+		$validator->setAllowDashNotation(false);
+		$this->assertEquals(false, $validator->getAllowDashNotation());
+		
+		$validator->setAllowLowercase(false);
+		$this->assertEquals(false, $validator->getAllowLowercase());
+		
+		$validator->setAllowUnseparatedNotation(false);
+		$this->assertEquals(false, $validator->getAllowUnseparatedNotation());
+		
+		$validator->setAllowUppercase(false);
+		$this->assertEquals(false, $validator->getAllowUppercase());
+	}
 }

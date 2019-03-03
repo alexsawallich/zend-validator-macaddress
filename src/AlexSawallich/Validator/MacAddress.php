@@ -23,6 +23,61 @@ class MacAddress extends AbstractValidator
 		'allowLowercase' => true
 	];
 	
+	public function getAllowColonNotation() : bool
+	{
+		return $this->options['allowColonNotation'];
+	}
+	
+	public function setAllowColonNotation(bool $allowColonNotation)
+	{
+		$this->options['allowColonNotation'] = $allowColonNotation;
+		return $this;
+	}
+	
+	public function getAllowDashNotation() : bool
+	{
+		return $this->options['allowDashNotation'];
+	}
+	
+	public function setAllowDashNotation(bool $allowDashNotation)
+	{
+		$this->options['allowDashNotation'] = $allowDashNotation;
+		return $this;
+	}
+	
+	public function getAllowLowercase() : bool
+	{
+		return $this->options['allowLowercase'];
+	}
+	
+	public function setAllowLowercase(bool $allowLowercase)
+	{
+		$this->options['allowLowercase'] = $allowLowercase;
+		return $this;
+	}
+	
+	public function getAllowUnseparatedNotation() : bool
+	{
+		return $this->options['allowUnseparatedNotation'];
+	}
+	
+	public function setAllowUnseparatedNotation(bool $allowUnseparatedNotation)
+	{
+		$this->options['allowUnseparatedNotation'] = $allowUnseparatedNotation;
+		return $this;
+	}
+	
+	public function getAllowUppercase() : bool
+	{
+		return $this->options['allowUnseparatedNotation'];
+	}
+
+	public function setAllowUppercase(bool $allowUppercase)
+	{
+		$this->options['allowUppercase'] = $allowUppercase;
+		return $this;
+	}
+	
 	public function isValid($value)
 	{
 		if (false === is_string($value)) {
