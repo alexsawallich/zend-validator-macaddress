@@ -2,7 +2,7 @@
 	"name": "alexsawallich/zend-validator-macaddress",
 	"type": "library",
 	"keywords": ["zend", "validate", "validator", "mac", "address", "plugin"],
-	"license": "GNU General Public License v3.0",
+	"license": "GPL-3.0-only",
 	"homepage": "https://github.com/alexsawallich/zend-validator-macaddress",
 	"readme": "README.md",
 	"authors": [
